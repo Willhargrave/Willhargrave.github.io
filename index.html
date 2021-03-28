@@ -1,1 +1,135 @@
-Family Quiz
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hargrave Quiz</title>
+    <link href ="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src ="main.js"></script>
+</head>
+
+<body>
+<header>    
+<h1>Hargrave Family Quiz</h1><p id= "score"></p>
+</header>
+<div class= "container">
+<form id = "round1" name ="round1">
+<h1>Round One: 2021</h1>
+<p>The first eight questions will all be about 2021.
+    Full names and correct spelling are necessary. 
+    The answers are case sensitive (sorry)
+<p>Who interviewed Meghan Markle and Prince Harry on CBS?</p>
+<input id = "textbox" type = "text" name = "question1">
+<p>Who are the current Premier League leaders?</p>
+<input id = "textbox" type = "text" name = "question2">
+<p>Which female hip-hop artist became the first to go diamond (sell 10 millions copies) despite her lack of education?
+</p>
+<input id = "textbox" type = "text" name = "question3">
+<p>Which country is currently providng aslym for Julian Assange?</p>
+<input id = "textbox" type = "text" name = "question4">
+<p>Who passed Jeff Bezos as the richest man in the world?</p>
+<input id = "textbox" type = "text" name = "question5">
+<p>On February 1st, which country suffered a coup?</p>
+<input id = "textbox" type = "text" name = "question6">
+<p>Who won the women's US Open tennis tournamnet?</p>
+<input id = "textbox" type = "text" name = "question7">
+<p>What date is the UK set to end full Covid restrictions?</p>
+    <input type = "radio" id = "mc" name = "question8" value = "June20th"> June 20th<br>
+    <input type = "radio" id = "mc" name = "question8" value = "June21st"> June 21st<br>
+    <input type = "radio" id = "mc" name = "question8" value = "June22nd"> June 22nd<br>
+    <input type = "radio" id = "mc" name = "question8" value = "June23rd"> June 23rd<br>
+
+
+<input id = "button" type = "button" value = "Round 2!" onclick = "part1();">
+
+</form>
+
+ <div id = "after_submit">
+<form id = "round2" name = "round2">
+    <h1>Round 2: Music Round</h1>
+    <p> In this round you will hear eight different pieces of music.
+        Please name the sampled artist (not the artist of the actual song). 
+        For composers you please put the surname.
+    </p>
+    <h2>Drake - Congratulation</h2>
+    <audio controls>
+        <source src="Audio/Drake.mp3">
+    </audio>
+    <input id = "textbox" type = "text" name = "question9">
+    <h2>Cam'Ron - Girls</h2>
+    <audio controls>
+        <source src="Audio/Camron.mp3">
+    </audio>
+    <input id = "textbox" type = "text" name = "question10">
+    <h2>The Beatles - Because</h2>
+    <audio controls>
+        <source src="Audio/Beatles.mp3">
+    </audio>
+    <input id = "textbox" type = "text" name = "question11">
+    <h2>Kendrick Lamar - i</h2>
+    <audio controls>
+        <source src="Audio/Kendrick.mp3">
+    </audio>
+    <input id = "textbox" type = "text" name = "question12">
+    <h2>M.I.A - Paper Planes</h2>
+    <audio controls>
+        <source src="Audio/MIA.mp3">
+    </audio>
+    <input id = "textbox" type = "text" name = "question13">
+    <h2>Childish Gambino - Toxic</h2>
+    <audio controls>
+        <source src="Audio/Childish Gambino.mp3">
+    </audio>
+    <input id = "textbox" type = "text" name = "question14">
+    <h2>Death Grips - Culture
+    </h2>
+    <audio controls>
+        <source src="Audio/Death Grips.mp3">
+    </audio>
+    <input id = "textbox" type = "text" name = "question15">
+    <h2>Playboi Carti - Vamp Anthem</h2>
+    <audio controls>
+        <source src="Audio/Playboi Carti.mp3">
+    </audio>
+    <input id = "textbox" type = "text" name = "question16">
+
+    
+    
+    <input id = "button" type = "button" value = "The Final Round" onclick = "part2();">
+     
+</form>
+</div>
+<div id = "after_submit2"> 
+<form id = "round3" name = "round3">
+    <h1>Round 3: Geography</h1>
+    <p> The final round  will be eight questions on geography.
+    </p>
+<p>The Liancourt Rocks are a disputed piece of land between Japan
+    and which country?
+</p>
+<input id = "textbox" type = "text" name = "question17">
+<p>Which country is ironically the most obese in Europe?</p>
+<input id = "textbox" type = "text" name = "question18">
+<p>Who will host the 2022 FIFA World Cup?</p>
+<input id = "textbox" type = "text" name = "question19">
+<p>What month is Saint Andrew's Day?</p>
+<input id = "textbox" type = "text" name = "question20">
+<p>What US state does Donald Trump currently live in?</p>
+<input id = "textbox" type = "text" name = "question21">
+<p>What is the capital of Nigeria?</p>
+<input id = "textbox" type = "text" name = "question22">
+<p>The Bay of Pigs took place on what island?</p>
+<input id = "textbox" type = "text" name = "question23">
+<p>The Democractic Republic of Congo was formally known as what?</p>
+<input id = "textbox" type = "text" name = "question24">
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "part3();">
+</form>
+</div>
+<div id = "Game_Over">
+ <p id = "message"></p>
+ <p id = "score"></p>
+ <img id = "picture">
+</div>
+</div>
+</body>
+</html>
