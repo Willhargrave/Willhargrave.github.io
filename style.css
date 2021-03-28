@@ -1,0 +1,77 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(110, 20, 91, 0.651);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+#round1 {
+    margin-left: 10px;
+    background: #d2def2;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+    visibility: visible;
+}
+#round2 {
+    margin-right: 100px;
+    background: #d2def2;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+#round3 {
+    margin-right: 100px;
+    background: #d2def2;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+
+}
+
+input {
+    margin-bottom: 20px;
+    
+}
+#textbox {
+    height: 25px; 
+    font-size: 16px;
+    border-radius: none;
+    padding-left: 5px;
+}
+#button {
+    background: green;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;
+}
+#button:hover {
+    background: white;
+    border: 1px solid green;
+    color: black;
+    cursor: pointer;
+}
+#after_submit {
+    visibility: hidden;
+}
+#after_submit2 {
+    visibility: hidden;
+}
+#Game_Over {
+    position: fixed;
+    negative: top;
+    left: calc(100% -52px);
+    visibility: hidden;
+}
