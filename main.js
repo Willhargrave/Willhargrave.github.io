@@ -90,7 +90,7 @@ function part2() {
     } else {
         alert("Question 13, It was The Clash who M.I.A sampled")
     }
-    if (question14 == "Britney Speers") {
+    if (question14 == "Britney Spears") {
         score++;
     } else {
         alert("Question 14, Britney Speers was being sampled by Childish Gambino")
